@@ -89,7 +89,7 @@ impl Decodable for StereoStream {
 impl StereoStream {
     pub const FRAME_STEP: f64 = 1.0 / 44_100.0;
 
-    pub const DEFAULT_CAPACITY: usize = 4096;
+    pub const DEFAULT_CAPACITY: usize = 1024;
     pub const DEFAULT_VOLUME: f32 = 1.0;
 
     pub fn remaining(&self) -> usize {
