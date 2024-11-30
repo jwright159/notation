@@ -14,7 +14,7 @@ pub struct MidiSynth {
     buffer_right: [f32; Self::AUDIO_BUFFER_SIZE],
 }
 impl MidiSynth {
-    pub const AUDIO_BUFFER_SIZE: usize = 2048;
+    pub const AUDIO_BUFFER_SIZE: usize = 512;
     pub const SOUND_FONT: &'static str = "sblive";
 
     #[cfg(target_os = "windows")]
